@@ -66,7 +66,6 @@ while 1:
     master.after(10)
     if link_in_clipboard_flag:
         link_detected_label.configure(text="detected link from clipboard")
-        e2.focus_force()
         e1.delete(0, tk.END)
         e1.insert(0, pyperclip.paste())
         break
